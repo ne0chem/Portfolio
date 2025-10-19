@@ -11,6 +11,17 @@ body {
   max-width: 945px;
   margin: auto;
 }
+.section {
+  padding-top: 64px;
+  padding-bottom: 92px;
+}
+.section-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 84px;
+}
 .hero {
   padding-top: 50px;
   padding-bottom: 150px;
@@ -25,6 +36,13 @@ body {
 .social-link {
   margin-left: 20px;
 }
+.social-link:first-child {
+  margin-left: 0;
+}
+.hero-img {
+  width: 100%;
+  max-width: 590px;
+}
 .hero-content {
   display: flex;
   justify-content: space-between;
@@ -34,7 +52,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #ffbb01;
-  display: inline-block;
+  display: block;
   margin-bottom: 14px;
 }
 .hero-title {
@@ -73,4 +91,130 @@ body {
   background-size: 97%;
 
   border: 13px solid #fff;
+}
+
+/*стили для бдлока со мной удобно работаь*/
+.features {
+  background: #000;
+}
+.features-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.features-item {
+  flex-basis: 30%;
+  margin-bottom: 63px;
+}
+.features-image {
+  display: block;
+  margin-bottom: 22px;
+}
+.features-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.features-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+
+/*стили для блока контак*/
+.contacts-form {
+  background-color: #ffffff;
+  box-shadow: -5px 5px 0px #ffc41d;
+  border-radius: 5px;
+  max-width: 380px;
+  padding-top: 40px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 49px;
+}
+.form-title {
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 29px;
+}
+.input {
+  background-color: #f8f8f8;
+  border: none;
+  box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+  border-radius: 5px;
+  padding: 18px 20px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 28px;
+  padding-left: 50px;
+}
+
+.input.input-name {
+  background-image: url("../image/user-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  background-size: 20px;
+  margin-bottom: 28px;
+}
+
+.input.input-phone {
+  background-image: url("../image/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  background-size: 20px;
+  margin-bottom: 28px;
+}
+.form-button {
+  max-width: 100%;
+}
+.contacts-text {
+  flex-basis: 50%;
+}
+.contacts-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts-data {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+}
+.contacts-phone,
+.contacnts-mail {
+  flex-basis: 50%;
+  margin-bottom: 53px;
+}
+.contacnts-social {
+  flex-basis: 100%;
+}
+.contacts-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.contacts-link {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 37px;
+}
+.contacts-link:hover {
+  text-decoration: underline;
+}
+.contacts-policy {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #a5a5a5;
+  margin-top: 72px;
 }
