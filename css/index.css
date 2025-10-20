@@ -123,7 +123,97 @@ body {
   line-height: 28px;
   margin: 0;
 }
+/*,блок с проектам*/
+.projects {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+}
+.project-slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.progect-title {
+  flex-basis: 100%;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 41px;
+}
+.project-text {
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-time,
+.project-cost {
+  flex-basis: 50%;
+  margin-bottom: 44px;
+}
+.project-time,
+.project-cost,
+.project-feedback {
+  display: flex;
+  align-items: flex-start;
+}
+.project-subtitle {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 7px;
+}
+.project-paragraf {
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+}
+.project-icon {
+  margin-right: 16px;
+}
+.project-image {
+  width: 350px;
+  height: 300px;
+  border-radius: 20px;
+}
+/* Стили для пагинации */
+.project-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
 
+.project-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  margin-left: 500px;
+}
+
+.project-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffbb01;
+  border-radius: 50%;
+  background: transparent;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-pagination .swiper-pagination-bullet-active {
+  background-color: #ffbb01;
+  transform: scale(1.2);
+}
 /*стили для блока контак*/
 .contacts-form {
   background-color: #ffffff;
@@ -217,4 +307,8 @@ body {
   text-decoration-line: underline;
   color: #a5a5a5;
   margin-top: 72px;
+}
+.swiper {
+  /* width: 130%; */
+  height: 400px;
 }
